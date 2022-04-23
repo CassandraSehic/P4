@@ -18,8 +18,9 @@ section p {
 }
 
 img{
-    max-height: 10em;
+
     width: 80%;
+    height: auto;
 
 }
 
