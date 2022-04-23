@@ -1,0 +1,99 @@
+<!-- DEVELOPER: Cassandra Sehic, IS117-102, Spring 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SehicP4</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/aboutme.css" rel="stylesheet">
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Home</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="contact.html">Contact Form</a>
+                            <a class="dropdown-item" href="Aboutme.html">About Me</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Practical Encryption
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="encryption.html">About Encryption</a>
+                            <a class="dropdown-item" href="keypairs.html">Generating Key Pairs</a>
+
+
+                            <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Practical Databases
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="databases.html">About Databases</a>
+                            <a class="dropdown-item" href="ddl.html">Using DDL in Microsoft Access</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+
+    <section>
+
+        <h3>Generating Key Pairs with the PGP Command Line</h3>
+        <ol>
+            <li>Open a command shell.</li>
+            <li>Type <code>pgp --gen-key [user ID] --key-type [key type] --bits [bits #] --passphrase [passphrase]</code> replacing the square brackets with the correct information for your key pair.</li>
+            <li>Press ENTER. This will generate your key pair and return your key ID and a message that it was generated successfully.</li>
+            <li>To display your new key pair you can type <code>pgp --list-keys</code> the shorthand version <code>pgp -l</code> will also work.</li>
+            <li>You should display the key before you export it to be sure it is the right one.</li>
+            <li>To export the key, type <code>pgp --export (input)</code> where input can be either the user ID or key ID.</li>
+            <li>You can follow the same proccess to import a public key. Just type <code>pgp --import (input)</code>.</li>
+            <li>Finally, if you want to delete a key pair from your keyring, use the command <code>pgp --remove (input)</code></li>
+        </ol>
+
+    </section>
+
+</body>
+<footer class="footer page-footer font-small ">
+    <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Cassandra Sehic, Spring 2022 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+    </div>
+</footer>
+</html>

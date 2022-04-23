@@ -1,0 +1,58 @@
+/*DEVELOPER: Cassandra Sehic, IS117-102, Spring, 2022 */
+
+aside {
+    border-radius: 25px;
+    float: left;
+    position: absolute;
+    text-align: left;
+    background-color: #FFDBE9;
+    color: #856380;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 27%;
+
+}
+
+aside p{
+    float: left;
+
+}
+
+div h2 {
+    width: 65.625%;                  /* 525 / 800 X 100 */
+    float: right;
+    padding: 2% 15% 0 2.5%;
+    position: relative;
+    text-align: center;
+}
+div p{
+    width: 65.625%;                  /* 525 / 800 X 100 */
+    float: right;
+    padding: 2% 15% 20px 2.5%;
+    position: relative;
+    text-align: center;
+}
+div img{
+    float: right;
+    padding-right: 25%;
+    max-width: 55%;
+    padding-bottom: 5%;
+}
+
+aside img{
+    padding: 10%;
+    max-width: 200%;
+    width: 18em;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}

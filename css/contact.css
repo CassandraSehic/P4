@@ -1,0 +1,57 @@
+/*DEVELOPER: Cassandra Sehic, IS117-102, Spring, 2022 */
+
+h2{
+    text-align: center;
+    padding: 2%;
+    color: #856380;
+}
+
+form{
+    padding: 5%;
+}
+.form-group{
+    color: #856380;
+    padding: 1% 10%;
+    background-color: #FFDBE9 ;
+}
+
+section {
+
+    border-radius: 25px;
+    background-color: #FFDBE9;
+    padding: 6em;
+}
+section h1 {
+    color: #856380;
+    text-align: center;
+}
+
+section p {
+    color: #856380;
+    text-align: center;
+
+}
+
+img{
+    max-height: 10em;
+    width: 80%;
+
+}
+
+
+
+.card-body {
+    padding: 5em;
+    border: 1em #5a5858;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}

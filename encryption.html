@@ -1,0 +1,108 @@
+<!-- DEVELOPER: Cassandra Sehic, IS117-102, Spring 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SehicP4</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/encryption.css" rel="stylesheet">
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Home</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="contact.html">Contact Form</a>
+                            <a class="dropdown-item" href="Aboutme.html">About Me</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Practical Encryption
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="encryption.html">About Encryption</a>
+                            <a class="dropdown-item" href="keypairs.html">Generating Key Pairs</a>
+
+
+                            <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Practical Databases
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="databases.html">About Databases</a>
+                            <a class="dropdown-item" href="ddl.html">Using DDL in Microsoft Access</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <h2>Practical Encryption</h2>
+        <br>
+        <p>
+            Encryption is the method by which information is converted into secret code that hides the information's true meaning. In other words, plaintext is converted into cyphertext, and then back into plaintext. Encryption prevents third parties from being able to understand private information. It works like this; Alice and Bob each have a private and public key. If Alice wants to send Bob a private message, she will ask Bob for his public key and use it to encrypt her  message. She will then send it and anyone trying to snoop will not be able to understand the message. When Bob receives his message, he will use his private key to decrypt the message to read it. Only Bob will be able to read it because his private key is the only one that can decrypt the message since it was encrypted with his public key. This works because the keys are pairs, they go together. Anyone can possess Bob's public key, and they will still not be able to read the message. The private key is neccessary. That is why its important that Bob does not share his private key. Lets say now that Bob wants to send a message to Alice. He will have to ask for HER public key to encrypt the message. So the process is the same. He will send the message and she will use her private key to decrypt it.
+        </p>
+        <img src="images/bobandalice.JPG" alt="Bob and Alice">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+
+    <aside>
+        <img src="images/encryption.jpg">
+        <br>
+        <h3>Encryption in Web3</h3>
+            <li>Immutability</li>
+            <li>Trustlessness</li>
+            <li>Proven Ownership</li>
+        <br>
+            <h3>Some helpful links</h3>
+            <a href="https://www.okta.com/identity-101/asymmetric-encryption/">Asymetric Encryption</a>
+        <br>
+            <a href="https://www.openpgp.org/ ">Open PGP</a>
+        <br>
+            <a href="https://datatracker.ietf.org/doc/html/draft-shaw-openpgp-hkp-00#section-2">HKP Keyserver</a>
+            <h3>Lorem ipsum...</h3>
+
+    </aside>
+
+</body>
+<footer class="footer page-footer font-small ">
+    <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Cassandra Sehic, Spring 2022 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+    </div>
+</footer>
+</html>
