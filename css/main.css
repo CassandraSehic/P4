@@ -18,8 +18,8 @@ section p {
 }
 
 img{
-
-    width: 80%;
+    max-width: 20em;
+    width: 70%;
     height: auto;
 
 }
